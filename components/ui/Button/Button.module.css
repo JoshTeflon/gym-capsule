@@ -1,11 +1,15 @@
 .root {
-    @apply w-full cursor-pointer inline-flex items-center justify-center px-8 py-3 
+    @apply w-full cursor-pointer inline-flex items-center justify-center px-8 py-4 
     transition ease-in-out duration-150 rounded-md text-base font-medium tracking-wide;
     max-height: 44px;
   }
   
   .root:hover {
     /* @apply opacity-90; */
+  }
+
+  .root:active {
+    @apply opacity-90;
   }
   
   .primary {
@@ -33,7 +37,7 @@
   }
   
   .naked {
-    @apply bg-transparent border-none shadow-none outline-none py-0 px-0;
+    @apply w-auto p-0 bg-transparent border-none shadow-none outline-none py-0 px-0;
   }
   .naked:hover,
   .naked:focus {
@@ -41,7 +45,7 @@
   }
 
   .link {
-    @apply border-none shadow-none outline-none;
+    @apply w-auto p-0 underline border-none shadow-none outline-none;
   }
   .link:hover,
   .link:focus {

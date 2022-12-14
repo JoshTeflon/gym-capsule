@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const BrandLogo: React.FC = ({...props}) => {
+const BrandLogo = ({...props}) => {
   return (
     <svg
       width={118}

@@ -4,8 +4,8 @@ import cn from 'clsx'
 import s from './Footer.module.css'
 import Image from 'next/image'
 import { BrandLogo } from '../../svg'
-import AndroidImage from '../../../assets/images/android-download.png'
-import AppleImage from '../../../assets/images/apple-download.png'
+import AndroidImage from '../../../assets/images/android-download.svg'
+import AppleImage from '../../../assets/images/apple-download.svg'
 
 const Footer: React.FC = () => {
   const footerItems = [
@@ -98,13 +98,13 @@ const Footer: React.FC = () => {
                 }
             </div>
             <div className='md:w-1/4 flex flex-col items-center'>
-                <h1 className='text-text-300 text-lg leading-6 font-semibold'>Get GymCapsule</h1>
+                <h1 className='text-text-300 text-lg leading-6 font-semibold pb-3'>Get GymCapsule</h1>
                 <ul>
                     {
                         download.map((k: any) => {
                             return (
-                                <li className='py-2' key={k.href}>
-                                    <Image width={144} src={k.image} alt={k.alt}/>
+                                <li className='py-1.5' key={k.href}>
+                                    <Image width={140} src={k.image} alt={k.alt}/>
                                 </li>
                             )
                         })

@@ -1,0 +1,5 @@
+.root {
+    @apply px-8 sm:px-16 lg:px-20 bg-primary bg-cover bg-center bg-no-repeat
+    rounded-xl flex flex-col lg:flex-row items-center justify-between;
+    background-image: url('../../../assets/images/how-to-refer.svg');
+}

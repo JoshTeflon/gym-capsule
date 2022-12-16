@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         links: [
             {
                 item: 'Contact Us',
-                href: '/'
+                href: '/contact-us'
             },
             {
                 item: 'Help',
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
         links: [
             {
                 item: 'Refer your company',
-                href: '/'
+                href: '/refer-hr'
             },
             {
                 item: 'Terms and Conditions',

@@ -11,9 +11,9 @@ const Landing: React.FC = () => {
     <div className='w-full'>
         <div className='layout-wrapper flex flex-col lg:flex-row lg:items-center justify-between'>
             <div className='flex-grow'>
-                <StarGradient className='ml-[50%] lg:ml-[35%] my-4 lg:my-8' />
-                <div className='w-full flex items-center justify-between'>
-                    <h1 className='text-5xl sm:text-7xl'>
+                <StarGradient className='ml-[50%] lg:ml-[35%] my-4 xl:my-8' />
+                <div className='w-full flex items-center md:justify-between'>
+                    <h1 className='text-5xl sm:text-7xl lg:text-[3.25rem] xl:text-7xl leading-[112%]'>
                         <span className='whitespace-nowrap'>One Subcription.</span>
                         <br />
                         <span className='whitespace-nowrap'>One App.</span>

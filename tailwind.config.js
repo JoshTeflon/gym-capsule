@@ -6,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      maxWidth: {
-        '8xl': '1536px'
-      },
       colors: {
         'brand': 'var(--brand)',
         'primary': 'var(--primary)',
@@ -16,6 +13,7 @@ module.exports = {
         'text-200': 'var(--text-200)',
         'text-300': 'var(--text-300)',
         'text-400': 'var(--text-400)',
+        'text-600': 'var(--text-600)',
         'text-700': 'var(--text-700)',
         'text-gradient': 'var(--text-gradient)',
         'bg-light': 'var(--bg-light)'

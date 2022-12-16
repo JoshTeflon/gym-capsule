@@ -3,8 +3,12 @@ import Head from 'next/head'
 import {
   Landing,
   JobOffers,
-  NetPromoter
+  NetPromoter,
+  PartnerUs,
+  EmployeePlan,
+  Team
 } from '../components/companies'
+import { FavouritePlaces } from '../components/home'
 
 export default function ForCompanies() {
   return (
@@ -17,6 +21,10 @@ export default function ForCompanies() {
       <Landing />
       <JobOffers />
       <NetPromoter />
+      <PartnerUs />
+      <FavouritePlaces theme='grey' />
+      <EmployeePlan />
+      <Team />
     </div>
   )
 }

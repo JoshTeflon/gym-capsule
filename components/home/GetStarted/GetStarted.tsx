@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import cn from 'clsx'
 import s from './GetStarted.module.css'
 import { ArrowRight } from '../../svg'
 import { Button } from '../../ui'
@@ -9,8 +10,8 @@ const GetStarted: React.FC = () => {
 
     return (
         <div className='w-full py-8'>
-            <div className={s.root}>
-                <div className='hidden sm:block w-60 lg:w-auto'>
+            <div className={cn(s.root, 'layout-wrapper')}>
+                <div className='w-60 mt-4 lg:mt-0 lg:w-auto'>
                     <Image src={iPhone} alt='iPhone 11' />
                 </div>
                 <div>

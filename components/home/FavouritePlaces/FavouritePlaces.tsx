@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'clsx'
 import {
     QuadCircle,
     IFitness,
@@ -19,7 +20,11 @@ import {
 } from '../../svg'
 import { Button } from '../../ui'
 
-const FavouritePlaces: React.FC = () => {
+interface FavouritePlacesProps {
+    theme?: 'light' | 'grey'
+}
+
+const FavouritePlaces: React.FC<FavouritePlacesProps> = ({theme}) => {
     const places = [
         {
             item: 'I-Fitness',
@@ -88,23 +93,29 @@ const FavouritePlaces: React.FC = () => {
     ]
 
     return (
-        <div className='w-full'>
+        <div className={cn('w-full', theme === 'grey'  && 'bg-[#F5F5F5]')}>
             <div className='layout-wrapper py-8'>
-                <div className='text-center max-w-xl mx-auto'>
+                <div className={cn('text-center max-w-xl mx-auto', theme === 'grey' && 'mb-8')}>
                     <h2 className='text-[2.5rem] leading-[54px] font-medium'>
                         At all their favourite <span className='gradient-text'>places</span>
                     </h2>
                     <p className='text-text-300 text-xl'>Gyms, Spa&apos;s , Yoga Studios , Dance Studios - Explore our Gyms, Studios, Spas and more</p>
                 </div>
-                <div className='mb-2 ml-[95%] lg:ml-[100%]'>
+                <div className={cn('mb-2 ml-[95%] lg:ml-[100%]', theme === 'grey'  && 'hidden')}>
                     <QuadCircle />
                 </div>
-                <div className='w-[95%] mx-auto'>
+                <div className='w-full lg:w-[95%] mx-auto'>
                     <ul className='flex items-center justify-center flex-wrap'>
                         {
                             places.map((i: any, index: number) => {
                                 return (
-                                    <li className='bg-bg-light w-64 min-h-[7.5rem] m-1 flex items-center justify-center' key={index}>
+                                    <li
+                                        className={cn(
+                                                'w-full sm:w-[48%] lg:w-64 min-h-[7.5rem] m-1 flex items-center justify-center',
+                                                theme === 'grey' ? 'bg-white' : 'bg-bg-light'
+                                            )}
+                                        key={index}
+                                    >
                                         {i.logo}<span className='text-text-200 text-lg font-DMSans ml-2 lg:ml-4'>{i.item}</span>
                                     </li>
                                 )

@@ -26,11 +26,11 @@ const NetPromoter: React.FC = () => {
         <div className='w-full'>
             <div className='flex flex-col lg:flex-row items-center 2xl:layout-wrapper'>
                 <div className='w-full lg:w-1/2'>
-                    <Image src={PromoterBg} alt="promoters" />
+                    <Image className='w-full' src={PromoterBg} alt="promoters" />
                 </div>
-                <div className='w-full lg:w-1/2 max-w-xl py-16 px-8 lg:px-16'>
-                    <h2 className='text-[2.5rem] leading-[54px] font-medium max-w-md'>
-                        Get your Net promoter score  <span className='gradient-text'>through the roof.</span>
+                <div className='layout-wrapper lg:w-1/2 py-8 lg:px-16'>
+                    <h2 className='text-[2.5rem] leading-[54px] font-medium lg:max-w-md'>
+                        Get your Net promoter score <span className='gradient-text'>through the roof.</span>
                     </h2>
                     <p className='text-text-300 text-xl py-4'>Help your employees live happier, more productive lives and watch your business soar</p>
                     <ul className='flex items-center'>

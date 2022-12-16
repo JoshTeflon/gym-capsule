@@ -1,0 +1,8 @@
+.root {
+  @apply p-3 w-full border border-[#BEBFC1] text-text-400 text-sm leading-[17px]
+  placeholder:text-[#BEBFC1] rounded-lg appearance-none transition duration-150 ease-in-out ;
+}
+
+.root:focus {
+  @apply outline-none;
+}

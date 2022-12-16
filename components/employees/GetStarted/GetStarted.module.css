@@ -1,0 +1,6 @@
+.root {
+    @apply pt-8 lg:pt-16 px-8 lg:px-16 xl:px-32
+    bg-primary bg-cover bg-center bg-no-repeat
+    rounded-xl flex flex-col-reverse lg:flex-row items-center justify-between;
+    background-image: url('../../../assets/images/get-started-red.svg');
+}

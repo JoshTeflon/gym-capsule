@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const Link = ({...props}) => {
+const LinkIcon = ({...props}) => {
   return (
     <svg
       width={44}
@@ -23,4 +23,4 @@ const Link = ({...props}) => {
   )
 }
 
-export default Link
+export default LinkIcon

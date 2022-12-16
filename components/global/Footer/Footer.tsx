@@ -77,15 +77,15 @@ const Footer: React.FC = () => {
             <div className='md:w-1/4 text-primary'><BrandLogo /></div>
             <div className='md:w-1/2 py-6 md:py-0 flex flex-col md:flex-row items-start md:justify-between'>
                 {
-                    footerItems.map((i: any) => {
+                    footerItems.map((i: any, index: number) => {
                         return (
-                            <div className='py-3 md:py-0' key={i.header}>
+                            <div className='py-3 md:py-0' key={index}>
                                 <h1 className='text-text-300 text-sm font-semibold'>{i.header}</h1>
                                 <ul>
                                     {
-                                        i.links.map((j: any) => {
+                                        i.links.map((j: any, index: any) => {
                                             return (
-                                                <li className='text-text-400 text-sm pt-3 md:pt-6' key={j.href}>
+                                                <li className='text-text-400 text-sm pt-3 md:pt-6' key={index}>
                                                     <Link href={j.href}>{j.item}</Link>
                                                 </li>
                                             )
@@ -101,9 +101,9 @@ const Footer: React.FC = () => {
                 <h1 className='text-text-300 text-lg leading-6 font-semibold pb-3'>Get GymCapsule</h1>
                 <ul>
                     {
-                        download.map((k: any) => {
+                        download.map((k: any, index: number) => {
                             return (
-                                <li className='py-1.5' key={k.href}>
+                                <li className='py-1.5' key={index}>
                                     <Image width={140} src={k.image} alt={k.alt}/>
                                 </li>
                             )

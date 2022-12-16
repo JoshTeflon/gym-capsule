@@ -28,7 +28,7 @@ return (
     <div className='w-full pt-8 lg:pt-12 pb-48 bg-bg-light relative overflow-hidden'>
         <div className='layout-wrapper'>
             <h2 className='text-5xl leading-[59px] text-center font-semibold'>
-                <span className='gradient-text'>Refer to your HR</span> to Gym Capsule in 3..2..1..
+                <span className='gradient-text'>Refer your HR</span> to Gym Capsule in 3..2..1..
             </h2>
             <div className='my-4 lg:my-8'>
                 <ul className='flex flex-col lg:flex-row justify-between'>

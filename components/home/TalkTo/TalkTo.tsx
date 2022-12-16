@@ -3,7 +3,7 @@ import Image from 'next/image'
 import WeightLossExpert from '../../../assets/images/weight-loss-experts.svg'
 import Doctors from '../../../assets/images/doctors.svg'
 import FitnessCoaches from '../../../assets/images/fitness-coaches.svg'
-import Dietician from '../../../assets/images/dietician.svg'
+import Dieticians from '../../../assets/images/dietician.svg'
 
 const TalkTo: React.FC = () => {
     const help = [
@@ -20,8 +20,8 @@ const TalkTo: React.FC = () => {
             image: FitnessCoaches
         },
         {
-            item: 'Dietician',
-            image: Dietician
+            item: 'Dieticians',
+            image: Dieticians
         },
     ]
 

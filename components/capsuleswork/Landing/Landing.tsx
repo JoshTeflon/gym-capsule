@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import JoinUsers from '../../../assets/images/join-users.svg'
-import { StarGradient, ArrowRight, GetGymCapsule, Graph, Link, StarCross } from '../../svg'
+import { StarGradient, ArrowRight, GetGymCapsule, Graph, LinkIcon, StarCross } from '../../svg'
 import { Button } from '../../ui'
 
 const Landing: React.FC = () => {
@@ -42,7 +42,7 @@ const Landing: React.FC = () => {
                     </div>
                     <div className='w-4/5 sm:w-[90%] mx-auto min-w-[20rem] -mr-4 sm:-mr-20 bg-primary shadow-card-shadow p-8 flex items-center rounded-xl'>
                         <div className='w-[4.5rem] xl:w-[5.5rem] h-[4.5rem] xl:h-[5.5rem] bg-[rgba(255,255,255,0.2)] flex items-center justify-center rounded-full'>
-                            <Link />
+                            <LinkIcon />
                         </div>
                         <div className='ml-6'>
                             <h3 className='text-[#EDC1BC] text-lg xl:text-2xl font-medium capitalize mb-3'>Capsules Recieved</h3>

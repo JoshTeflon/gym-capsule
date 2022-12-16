@@ -48,11 +48,11 @@ const WhatWorks: React.FC = () => {
                                         <h3 className='text-2xl font-medium'>{i.item}</h3>
                                         <p className='text-[#70696E] text-lg'>{i.desc}</p>
                                     </div>
-                                    <Button>
-                                        <Link className='w-full h-full flex items-center justify-center' href={i.href}>
-                                            Get Started<ArrowRight className='ml-2' />
+                                        <Link href={i.href}>
+                                            <Button>
+                                                    Get Started<ArrowRight className='ml-2' />
+                                            </Button>
                                         </Link>
-                                    </Button>
                                 </li>
                             )
                         })

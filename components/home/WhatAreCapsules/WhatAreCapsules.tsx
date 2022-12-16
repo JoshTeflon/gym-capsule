@@ -1,5 +1,6 @@
 import React from 'react'
-import { Graph, Link, StarGradient } from '../../svg'
+import Link from 'next/link'
+import { Graph, LinkIcon, StarGradient } from '../../svg'
 import { Button } from '../../ui'
 
 const WhatAreCapsules: React.FC = () => {
@@ -12,7 +13,11 @@ const WhatAreCapsules: React.FC = () => {
                         What are <span className='gradient-text'>Capsules?</span>
                     </h2>
                     <p className='text-text-300 text-lg xl:text-xl leading-8'>Capsules equal money on the Gym Capsule network. Capsules allow you to book at thousands of studios, gyms, salons & spas. Use them whenever you like and however however you like</p>
-                    <Button variant='secondary-outline' className='!text-primary mt-8 max-w-[15rem]'>Learn More</Button>
+                        <Link href='/how-capsules-work'>
+                            <Button variant='secondary-outline' className='!text-primary mt-8 max-w-[15rem]'>
+                                    Learn More
+                            </Button>
+                        </Link>
                 </div>
                 <div className='relative'>
                     <StarGradient className='absolute -bottom-4 -left-40' />
@@ -30,7 +35,7 @@ const WhatAreCapsules: React.FC = () => {
                         </div>
                         <div className='w-[90%] mx-auto min-w-[16rem] -mr-8 sm:-mr-16 bg-primary shadow-card-shadow p-6 flex items-center rounded-xl'>
                             <div className='w-14 xl:w-[4.5rem] h-14 xl:h-[4.5rem] bg-[rgba(255,255,255,0.2)] flex items-center justify-center rounded-full'>
-                                <Link />
+                                <LinkIcon />
                             </div>
                             <div className='ml-6'>
                                 <h3 className='text-[#EDC1BC] text-base xl:text-xl font-medium capitalize'>Capsules Recieved</h3>

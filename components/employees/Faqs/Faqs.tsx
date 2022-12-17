@@ -37,23 +37,19 @@ const Faqs: React.FC = () => {
             <div className='layout-wrapper'>
                 <div className='w-full lg:w-11/12 mx-auto'>
                     <h2 className='text-text-200 text-5xl leading-[130%] text-center font-semibold'>Frequently Asked Questions</h2>
-                    <div className='bg-bg-light my-8 py-6 px-8 lg:py-8 lg:px-10'>
+                    <div className='bg-bg-light my-8 py-4 px-5 lg:py-8 lg:px-10'>
                         <ul>
                             {
                                 faqs?.map((i: any, index: number) => {
                                     return (
                                         <li
-                                            className='w-full bg-white my-4 py-2 px-2 lg:py-4 lg:px-4'
+                                            className='w-full bg-white my-4 py-2 px-3 lg:py-4 lg:px-4 cursor-pointer'
+                                            onClick={() => openFaq !== index ? setOpenFaq(index) : setOpenFaq(undefined)}
                                             key={index}
                                         >
                                             <div className='w-full flex items-center justify-between'>
                                                 <h3 className='text-lg font-medium mr-2 mb-2'>{i.q}</h3>
-                                                <Button
-                                                    variant='naked'
-                                                    onClick={() => openFaq !== index ? setOpenFaq(index) : setOpenFaq(undefined)}
-                                                >
-                                                    {openFaq === index ? <CaretDown /> : <CaretRight />}
-                                                </Button>
+                                                {openFaq === index ? <CaretDown /> : <CaretRight />}
                                             </div>
                                             <p className={cn(
                                                     'w-11/12 lg:w-4/5 text-[#7A7278] text-base',

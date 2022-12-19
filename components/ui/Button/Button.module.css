@@ -1,39 +1,26 @@
 .root {
     @apply w-full cursor-pointer inline-flex items-center justify-center px-8 py-4 
-    transition ease-in-out duration-150 rounded-md text-base font-medium tracking-wide;
+    transition ease-in-out duration-150 rounded-md text-base font-medium tracking-wide
+    active:shadow-card-shadow active:scale-[0.99] active:translate-y-[-1px] active:opacity-90;
     max-height: 44px;
   }
-  
-  .root:hover {
-    /* @apply opacity-90; */
+
+  @media (hover: hover) and (pointer: fine) {
+    .root:hover {
+        @apply translate-y-[-2px] shadow-card-shadow;
+    }
   }
 
-  .root:active {
-    @apply opacity-90;
-  }
-  
   .primary {
     @apply bg-primary text-white;
   }
-  .primary:focus,
-  .primary:hover {
-    /* @apply opacity-90; */
-  }
 
   .secondaryOutline {
     @apply bg-white text-text-400 border border-text-400;
   }
-  .secondaryOutline:focus,
-  .secondaryOutline:hover {
-    /* @apply opacity-90; */
-  }
 
   .secondaryOutline {
     @apply bg-white text-text-400 border border-text-400;
-  }
-  .secondaryOutline:focus,
-  .secondaryOutline:hover {
-    /* @apply opacity-90; */
   }
   
   .naked {
@@ -54,7 +41,7 @@
 
   .disabled,
   .disabled:hover {
-    @apply opacity-75 cursor-not-allowed;
+    @apply opacity-75 cursor-not-allowed translate-y-0 shadow-none;
   }
   
   .loading {

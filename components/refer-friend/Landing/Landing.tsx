@@ -28,7 +28,7 @@ const Landing: React.FC = () => {
             </div>
             <div className='relative mt-16 lg:my-0 rounded-xl mx-auto'>
                 <Image className='rounded-xl' src={LandingImage} alt="working out woman" width={640} priority />
-                <GetGymCapsule className='absolute -top-10 right-2 sm:-right-14 -rotate-[65deg]' />
+                <GetGymCapsule className='absolute -top-10 right-2 sm:-right-14 animate-spin-chill' />
                 <div 
                     className='flex items-center py-4 px-5 bg-white rounded-[10px] w-[15.75rem] absolute left-1 sm:-left-4 md:-left-8 lg:-left-[10.5rem] bottom-20 lg:bottom-40'
                     style={{ boxShadow: '0px 4px 38px rgba(0, 0, 0, 0.12)' }}

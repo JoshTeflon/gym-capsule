@@ -26,7 +26,7 @@ const Landing: React.FC = () => {
                             <span className='gradient-text whitespace-nowrap'>Healthy.</span>
                         </div>
                     </h1>
-                    <GetGymCapsule className='hidden md:block mr-16' />
+                    <GetGymCapsule className='hidden md:block mr-16 animate-spin-chill' />
                 </div>
                 <div className='max-w-[13.5rem] my-8'>
                     <Button>Get GymCapsule<ArrowRight className='ml-2' /></Button>

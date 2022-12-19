@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Code, Camera } from '../../svg'
+import { ArrowRight, Code, UnreadMail } from '../../svg'
 import { Button } from '../../ui'
 
 const JobOffers: React.FC = () => {
@@ -31,7 +31,7 @@ const JobOffers: React.FC = () => {
                         </div>
                         <div className='w-[90%] mx-auto min-w-[16rem] -mr-8 sm:-mr-16 bg-[#59419B] shadow-card-shadow p-6 flex items-center rounded-xl'>
                             <div className='w-14 xl:w-[4.5rem] h-14 xl:h-[4.5rem] bg-[rgba(255,255,255,0.2)] flex items-center justify-center rounded-full'>
-                                <Camera />
+                                <UnreadMail />
                             </div>
                             <div className='ml-6'>
                                 <h3 className='text-[#9D8DCA] text-base xl:text-xl font-medium capitalize'>Emails Unread</h3>

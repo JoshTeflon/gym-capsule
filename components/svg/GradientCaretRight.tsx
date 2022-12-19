@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const CaretRight = ({...props}) => {
+const GradientCaretRight = ({...props}) => {
   return (
     <svg
       width={7}
@@ -44,4 +44,4 @@ const CaretRight = ({...props}) => {
   )
 }
 
-export default CaretRight
+export default GradientCaretRight

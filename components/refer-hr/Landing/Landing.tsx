@@ -59,7 +59,7 @@ return (
                 </ul>
             </div>
             <div className='absolute left-12 lg:left-24 -bottom-12'>
-                <GetGymCapsule />
+                <GetGymCapsule className='animate-spin-chill' />
             </div>
         </div>
     </div>

@@ -24,7 +24,10 @@ module.exports = {
       },
       boxShadow: {
         'card-shadow': '0px 10.7477px 32.2432px rgba(149, 157, 165, 0.2)'
-      }
+      },
+      animation: {
+        'spin-chill': 'spin 9s linear infinite'
+      },
     },
   },
   plugins: [],

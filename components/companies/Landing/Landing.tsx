@@ -25,7 +25,7 @@ const Landing: React.FC = () => {
                         <Image src={JoinUsers} alt='join users' />
                         <span className='text-base font-medium ml-3'>Join 3,000+ users</span>
                     </div>
-                    <GetGymCapsule className='hidden md:block lg:mt-8 xl:-mt-8' />
+                    <GetGymCapsule className='hidden md:block lg:mt-8 xl:-mt-8 animate-spin-chill' />
                 </div>
                 <QuadCircle className='my-4 lg:my-8 ml-[85%] md:ml-[20%] xl:ml-[25%]' />
             </div>

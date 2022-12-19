@@ -1,6 +1,6 @@
 import React from 'react'
 import { StarGradient, ArrowRight } from '../../svg'
-import { Button, Input } from '../../ui'
+import { Button, Input, Select } from '../../ui'
 
 const Team: React.FC = () => {
     const teamInputs = [
@@ -39,7 +39,7 @@ const Team: React.FC = () => {
                     <div className='max-w-lg lg:max-w-[20rem]'>
                         <h2 className='text-text-300 text-lg leading-8 uppercase mb-2'>TALK TO US</h2>
                         <h3 className='text-[2.5rem] leading-[49px] font-medium'>
-                            Interested in a <span className='gradient-text'>happier and healtheir team ?</span>
+                            Interested in a <span className='gradient-text'>happier and healthier team ?</span>
                         </h3>
                     </div>
                 </div>
@@ -53,10 +53,18 @@ const Team: React.FC = () => {
                                             {x.label}
                                         </label>
                                         <div className="mt-2">
-                                            <Input
-                                                placeholder={x.placeholder}
-                                                type={x.type}
-                                            />
+                                            {
+                                                x.type === 'select' ?
+                                                <Select
+                                                    placeholder={x.placeholder}
+                                                    options={['0-9', '10-99', '100-200']}
+                                                />
+                                                :
+                                                <Input
+                                                    placeholder={x.placeholder}
+                                                    type={x.type}
+                                                />
+                                            }
                                         </div>
                                     </div>
                                 )

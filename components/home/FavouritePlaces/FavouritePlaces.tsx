@@ -74,10 +74,10 @@ const FavouritePlaces: React.FC<FavouritePlacesProps> = ({ theme }) => {
       item: "SureFit",
       logo: <SureFit />,
     },
-    {
-      item: "Mavin",
-      logo: <Mavin />,
-    },
+    // {
+    //   item: "Mavin",
+    //   logo: <Mavin />,
+    // },
     {
       item: "Binfem",
       logo: <Binfem />,

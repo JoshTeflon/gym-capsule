@@ -1,6 +1,6 @@
 import React from 'react'
 import { QuadCircle, ArrowRight } from '../../svg'
-import { Input, Button } from '../../ui'
+import { Input, Select, Button } from '../../ui'
 
 const ReferHr: React.FC = () => {
     const teamInputs = [
@@ -63,10 +63,18 @@ const ReferHr: React.FC = () => {
                                             {x.label}
                                         </label>
                                         <div className="mt-2">
-                                            <Input
-                                                placeholder={x.placeholder}
-                                                type={x.type}
-                                            />
+                                            {
+                                                x.type === 'select' ?
+                                                <Select
+                                                    placeholder={x.placeholder}
+                                                    options={['0-9', '10-99', '100-200']}
+                                                />
+                                                :
+                                                <Input
+                                                    placeholder={x.placeholder}
+                                                    type={x.type}
+                                                />
+                                            }
                                         </div>
                                     </div>
                                 )

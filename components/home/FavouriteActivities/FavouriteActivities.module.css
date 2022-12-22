@@ -2,18 +2,26 @@
     @apply bg-bg-light w-full lg:w-[32%] min-h-[11.5rem] my-4 lg:my-0 py-6 px-8 rounded-lg cursor-default;
 }
 
-.card:hover {
-    @apply bg-primary;
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        @apply bg-primary;
+    }
 }
 
-.card:hover h3 {
-    @apply text-white;
+@media (hover: hover) and (pointer: fine) {
+    .card:hover h3 {
+        @apply text-white;
+    }
 }
 
-.card:hover p {
-    @apply text-[#FFEDED];
+@media (hover: hover) and (pointer: fine) {
+    .card:hover p {
+        @apply text-[#FFEDED];
+    }
 }
 
-.card:hover button {
-    @apply text-[#FFF1F0];
+@media (hover: hover) and (pointer: fine) {
+    .card:hover button {
+        @apply text-[#FFF1F0];
+    }
 }

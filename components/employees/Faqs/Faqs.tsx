@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'clsx'
-import { CaretDown, CaretRight } from '../../svg'
+import { GradientCaretDown, GradientCaretRight } from '../../svg'
 import { Button } from '../../ui'
 
 const Faqs: React.FC = () => {
@@ -49,7 +49,7 @@ const Faqs: React.FC = () => {
                                         >
                                             <div className='w-full flex items-center justify-between'>
                                                 <h3 className='text-lg font-medium mr-2 mb-2'>{i.q}</h3>
-                                                {openFaq === index ? <CaretDown /> : <CaretRight />}
+                                                {openFaq === index ? <GradientCaretDown /> : <GradientCaretRight />}
                                             </div>
                                             <p className={cn(
                                                     'w-11/12 lg:w-4/5 text-[#7A7278] text-base',

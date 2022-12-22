@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import cn from 'clsx'
-import s from './Footer.module.css'
 import Image from 'next/image'
 import { BrandLogo } from '../../svg'
 import AndroidImage from '../../../assets/images/android-download.svg'
@@ -74,7 +72,9 @@ const Footer: React.FC = () => {
   return (
     <footer className='w-full bg-bg-light'>
         <div className='layout-wrapper pt-12 pb-16 flex flex-col md:flex-row items-start md:justify-between'>
-            <div className='md:w-1/4 text-primary'><BrandLogo /></div>
+            <Link href='/'>
+                <div className='md:w-1/4 text-primary'><BrandLogo /></div>
+            </Link>
             <div className='md:w-1/2 py-6 md:py-0 flex flex-col md:flex-row items-start md:justify-between'>
                 {
                     footerItems.map((i: any, index: number) => {

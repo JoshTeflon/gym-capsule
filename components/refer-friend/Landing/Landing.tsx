@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import LandingImage from '../../../assets/images/sweat-together.svg'
-import JoinUsers from '../../../assets/images/join-users.svg'
-import JoinUsersSm from '../../../assets/images/join-users-sm.svg'
 import { StarGradient, ArrowRight, GetGymCapsule } from '../../svg'
 import { Button } from '../../ui'
 
@@ -22,8 +20,8 @@ const Landing: React.FC = () => {
                     <Button>Get GymCapsule<ArrowRight className='ml-2' /></Button>
                 </div>
                 <div className='flex items-center'>
-                    <Image src={JoinUsers} alt='join users' />
-                    <span className='text-base font-medium ml-3'>Join 3,000+ users</span>
+                    <Image src='/images/join-users.png' alt='join users' width={72} height={24} />
+                    <span className='text-sm font-medium ml-3'>Join 3,000+ users</span>
                 </div>  
             </div>
             <div className='relative mt-16 lg:my-0 rounded-xl mx-auto'>
@@ -34,7 +32,7 @@ const Landing: React.FC = () => {
                     style={{ boxShadow: '0px 4px 38px rgba(0, 0, 0, 0.12)' }}
                 >
                     <h3 className='text-sm leading-4 font-semibold mr-4'>Top Friends</h3>
-                    <Image src={JoinUsersSm} alt='top friends' />
+                    <Image src='/images/join-users.png' alt='join users' width={72} height={24} />
                 </div>
                 <div
                     className='py-4 px-5 bg-white rounded-[10px] w-[15.75rem] absolute left-1 sm:-left-4 lg:-left-28 -bottom-8 lg:bottom-10'

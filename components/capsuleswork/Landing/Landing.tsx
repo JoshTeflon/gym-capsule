@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import JoinUsers from '../../../assets/images/join-users.svg'
 import { StarGradient, ArrowRight, GetGymCapsule, Graph, LinkIcon, StarCross } from '../../svg'
 import { Button } from '../../ui'
 
@@ -21,8 +20,8 @@ const Landing: React.FC = () => {
                 </div>
                 <div className='flex justify-between'>
                     <div className='flex items-center self-start'>
-                        <Image src={JoinUsers} alt='join users' />
-                        <span className='text-base font-medium ml-3'>Join 3,000+ users</span>
+                        <Image src='/images/join-users.png' alt='join users' width={72} height={24} />
+                        <span className='text-sm font-medium ml-3'>Join 3,000+ users</span>
                     </div>
                     <GetGymCapsule className='hidden md:block md:mt-8 lg:mt-24 mr-8 animate-spin-chill' />
                 </div>

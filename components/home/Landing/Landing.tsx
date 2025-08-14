@@ -1,7 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import LandingImage from '../../../assets/images/landing-image.svg'
-import JoinUsers from '../../../assets/images/join-users.svg'
 import { ArrowRight, GetGymCapsule, QuadCircle, StarCross, StarGradient } from '../../svg'
 import { Button } from '../../ui'
 
@@ -32,14 +30,14 @@ const Landing: React.FC = () => {
                     <Button>Get GymCapsule<ArrowRight className='ml-2' /></Button>
                 </div>
                 <div className='flex items-center'>
-                    <Image src={JoinUsers} alt='join users' />
+                    <Image src='/images/join-users.png' alt='join users' width={104} height={32} />
                     <span className='text-base font-medium ml-3'>Join 3,000+ users</span>
                 </div>
                 <StarCross className='my-6 ml-[95%] lg:ml-[70%]' />
             </div>
             <div className='relative mx-auto'>
                 <QuadCircle className='absolute left-0 top-[13%]' />
-                <Image src={LandingImage} alt="" width={420} priority />
+                <Image src='/images/landing-image.png' alt="" width={420} height={648} priority />
             </div>
         </div>
     </div>

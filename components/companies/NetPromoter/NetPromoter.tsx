@@ -1,32 +1,21 @@
 import React from 'react'
 import Image from 'next/image'
-import PromoterBg from '../../../assets/images/net-promoter.svg'
 import { Uh, Sad, StraightFace, Smiley, StarryEyes } from '../../svg'
 
 const NetPromoter: React.FC = () => {
     const emojis = [
-        {
-            emot: <Uh />
-        },
-        {
-            emot: <Sad />
-        },
-        {
-            emot: <StraightFace />
-        },
-        {
-            emot: <Smiley />
-        },
-        {
-            emot: <StarryEyes />
-        },
+        { emot: <Uh /> },
+        { emot: <Sad /> },
+        { emot: <StraightFace /> },
+        { emot: <Smiley /> },
+        { emot: <StarryEyes /> },
     ]
 
     return (
         <div className='w-full'>
             <div className='flex flex-col lg:flex-row items-center 2xl:layout-wrapper'>
                 <div className='w-full lg:w-1/2'>
-                    <Image className='w-full' src={PromoterBg} alt="promoters" />
+                    <Image className='w-full' src='/images/net-promoter.svg' alt="promoters" fill />
                 </div>
                 <div className='layout-wrapper lg:w-1/2 py-8 lg:px-16'>
                     <h2 className='text-[2.5rem] leading-[54px] font-medium lg:max-w-md'>

@@ -1,27 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
-import WeightLossExpert from '../../../assets/images/weight-loss-experts.svg'
-import Doctors from '../../../assets/images/doctors.svg'
-import FitnessCoaches from '../../../assets/images/fitness-coaches.svg'
-import Dieticians from '../../../assets/images/dietician.svg'
 
 const TalkTo: React.FC = () => {
     const help = [
         {
             item: 'Weight Loss Experts',
-            image: WeightLossExpert
+            src: '/images/weight-loss-experts.png'
         },
         {
             item: 'Doctors',
-            image: Doctors
+            src: '/images/doctors.png'
         },
         {
             item: 'Fitness Coaches',
-            image: FitnessCoaches
+            src: '/images/fitness-coaches.png'
         },
         {
             item: 'Dieticians',
-            image: Dieticians
+            src: '/images/dietician.png'
         },
     ]
 
@@ -41,8 +37,8 @@ const TalkTo: React.FC = () => {
                         {
                             help.map((i: any) => {
                                 return (
-                                    <li className='relative w-full max-w-[18rem] rounded-lg my-2 mr-4' key={i.item}>
-                                        <Image className='rounded-lg' src={i.image} alt={i.item} />
+                                    <li className='relative w-full max-w-[18rem] h-[23rem] rounded-lg my-2 mr-4' key={i.item}>
+                                        <Image className='rounded-lg' src={i.src} alt={i.item} fill />
                                         <div className='absolute left-0 right-0 bottom-0 m-7 p-2 text-center text-primary text-base font-medium bg-white border border-text-400 rounded-lg'>
                                             {i.item}
                                         </div>

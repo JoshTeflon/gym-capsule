@@ -26,7 +26,7 @@ const Landing: React.FC = () => {
                     </h1>
                     <GetGymCapsule className='hidden md:block mr-16 animate-spin-chill' />
                 </div>
-                <div className='max-w-[13.5rem] my-8'>
+                <div className='max-w-[13.5rem] mt-8 mb-6'>
                     <Button>Get GymCapsule<ArrowRight className='ml-2' /></Button>
                 </div>
                 <div className='flex items-center'>

@@ -16,7 +16,7 @@ const Landing: React.FC = () => {
                     <br />
                     <span className='gradient-text font-bold'>Stick together</span>
                 </h1>
-                <div className='max-w-[13.5rem] my-8'>
+                <div className='max-w-[13.5rem] mt-8 mb-6'>
                     <Button>Get GymCapsule<ArrowRight className='ml-2' /></Button>
                 </div>
                 <div className='flex items-center'>
